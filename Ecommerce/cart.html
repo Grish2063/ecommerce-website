@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendHive</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="ecom.css">
+  <link rel="icon" type="image/png" href="logo-1-primary.png">
+</head>
+
+<body>
+
+
+<section class="header" id="header">
+  <a href="ecommerce.html">
+    <img src="logo-1-primary-removebg-preview.png" class="logo" alt="logo">
+  </a>
+
+  <ul id="navbar">
+    <li><a href="ecommerce.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <a class="active" href="cart.html">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </a>
+    </li>
+    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+  </ul>
+
+  <div id="mobile">
+    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    <i id="bars" class="fa-solid fa-bars"></i>
+  </div>
+</section>
+
+
+<section class="about-header">
+  <h2>#Cart</h2>
+  <p>Add your coupon & save up to 70%</p>
+</section>
+
+
+<section id="cart" class="section-p1">
+  <div class="cart-scroll">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
+
+      <!-- DYNAMIC CART ITEMS -->
+      <tbody id="cart-body"></tbody>
+    </table>
+  </div>
+</section>
+
+
+<section id="cart-add" class="section-p1">
+
+  <div id="coupon">
+    <h3>Apply Coupon</h3>
+    <div>
+      <input type="text" placeholder="Enter coupon code">
+      <button class="normal">Apply</button>
+    </div>
+  </div>
+
+  <div id="subtotal">
+    <h3>Cart Total</h3>
+    <table>
+      <tr>
+        <td>Cart Subtotal</td>
+        <td id="cart-subtotal">$0</td>
+      </tr>
+      <tr>
+        <td>Shipping</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong id="cart-total">$0</strong></td>
+      </tr>
+    </table>
+
+    <button class="normal">Proceed to checkout</button>
+  </div>
+
+</section>
+
+
+<footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo-1-primary-removebg-preview.png">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Kathmandu, Nepal</p>
+            <p><strong>Phone:</strong> +977 9810002345 / +977 9810290191</p>
+            <p><strong>Hours:</strong> 9:00 - 18:00 , Sun - Fri</p>
+
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/app.jpg">
+                <img src="img/play.jpg">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay.png">
+        </div>
+
+
+        <div class="copyright">
+            <p>© 2025 TrendHive. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+<script src="e.js"></script>
+</body>
+</html>
